@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demand Forecasting Dashboard | Prashant Misra</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body { background: #f7f5ef; }
+      .demo-shell { min-height: 100vh; padding: clamp(1rem, 4vw, 4rem); }
+      .chart { height: 19rem; border: 1px solid rgba(16,24,32,.14); border-radius: 8px; background: linear-gradient(180deg,#fff,#eef4f0); position: relative; overflow: hidden; }
+      .chart svg { width: 100%; height: 100%; }
+      .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+      @media (max-width: 900px) { .dashboard-grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main class="demo-shell">
+      <a class="button" href="../index.html">Back to portfolio</a>
+      <section style="margin-top: 2rem;">
+        <p class="eyebrow">Dashboard preview</p>
+        <h1 style="font-size: clamp(2.4rem, 7vw, 5rem);">Demand Forecasting</h1>
+      </section>
+      <section class="dashboard-grid">
+        <article class="flow-panel"><h3>Model selection</h3><p>ARIMA, Prophet, XGBoost, and LightGBM benchmarked by SKU/region against RMSE, MAPE, and SMAPE.</p></article>
+        <article class="flow-panel"><h3>Feature engineering</h3><p>Lag features, rolling statistics, seasonality, external regressors, and segment-level validation.</p></article>
+      </section>
+      <div class="chart" aria-label="Forecast chart preview" style="margin-top: 1rem;">
+        <svg viewBox="0 0 900 300" preserveAspectRatio="none">
+          <path d="M0 230 C90 210 120 120 210 145 C300 170 330 80 420 110 C520 145 570 80 660 95 C750 112 800 60 900 75" fill="none" stroke="#1251a3" stroke-width="6"/>
+          <path d="M0 250 C90 230 120 150 210 168 C300 190 330 110 420 132 C520 162 570 105 660 115 C750 132 800 92 900 105" fill="none" stroke="#0f766e" stroke-width="4" stroke-dasharray="12 10"/>
+        </svg>
+      </div>
+    </main>
+  </body>
+</html>

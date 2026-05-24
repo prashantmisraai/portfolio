@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101820" />
+    <meta
+      name="description"
+      content="Prashant Kumar Misra - Senior AI Engineer building production AI systems, RAG pipelines, LLM infrastructure, agentic workflows, and backend platforms."
+    />
+    <meta property="og:title" content="Prashant Kumar Misra - Senior AI Engineer" />
+    <meta
+      property="og:description"
+      content="Production AI systems, RAG pipelines, LLM infrastructure, agentic AI, evaluation, and backend engineering."
+    />
+    <meta property="og:image" content="preview.svg" />
+    <meta property="og:type" content="website" />
+    <title>Prashant Kumar Misra | Senior AI Engineer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#top" aria-label="Prashant Kumar Misra home">
+        <span class="brand-mark">PM</span>
+        <span>Prashant Misra</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#work">Work</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Senior AI Engineer / RAG / Agentic AI / Backend Platforms</p>
+          <h1>Building production AI systems.</h1>
+          <p class="hero-text">
+            I design LLM platforms, RAG systems, autonomous agents, and cloud-native backend
+            services that are measurable, observable, and reliable enough for enterprise teams.
+          </p>
+          <div class="terminal-card" aria-label="Terminal summary">
+            <span class="prompt">$ prashant --focus</span>
+            <span>RAG quality • agent orchestration • FastAPI services • AWS deployment • LLM evals</span>
+          </div>
+          <div class="hero-actions" aria-label="Contact and profile links">
+            <a class="button primary" href="resume.pdf" download>Download Resume</a>
+            <a class="button" href="demos/enterprise-rag.html">Try RAG Demo</a>
+            <a class="button" href="mailto:prashantmisraai@gmail.com">Email me</a>
+            <a class="button" href="https://github.com/prashantmisraai" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button" href="https://linkedin.com/in/prashant-misra02" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Animated AI systems visualization">
+          <canvas id="systemsCanvas" width="720" height="540"></canvas>
+          <div class="signal-card signal-card-one">
+            <span>Retrieval latency</span>
+            <strong>2.4s -> 900ms</strong>
+          </div>
+          <div class="signal-card signal-card-two">
+            <span>Hallucinations</span>
+            <strong>-40%</strong>
+          </div>
+          <div class="signal-card signal-card-three">
+            <span>Faithfulness</span>
+            <strong>+31%</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Career highlights">
+        <article>
+          <strong>6+ years</strong>
+          <span>Production AI and backend engineering across enterprise environments.</span>
+        </article>
+        <article>
+          <strong>5K+ users</strong>
+          <span>Enterprise search and knowledge workflows designed for internal user scale.</span>
+        </article>
+        <article>
+          <strong>99.9%</strong>
+          <span>Uptime focus across AWS deployment, observability, and incident response.</span>
+        </article>
+        <article>
+          <strong>1M+ vectors</strong>
+          <span>Designed ingestion and retrieval patterns for high-volume document corpora.</span>
+        </article>
+      </section>
+
+      <section class="section intro-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About me</p>
+          <h2>Applied AI engineer with a backend systems spine.</h2>
+        </div>
+        <div class="intro-grid reveal">
+          <p>
+            I have built enterprise knowledge platforms, agentic incident response systems,
+            document automation workflows, and forecasting platforms. I care about practical AI:
+            grounded responses, measurable quality, predictable latency, and systems teams can
+            debug when the stakes are high.
+          </p>
+          <div class="skill-cloud" aria-label="Core skills">
+            <span>LLMs</span><span>RAG</span><span>LangGraph</span><span>LangChain</span>
+            <span>LlamaIndex</span><span>FastAPI</span><span>Spring Boot</span><span>AWS</span>
+            <span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span><span>Redis</span>
+            <span>FAISS</span><span>Pinecone</span><span>RAGAS-style evals</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-section" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected projects</p>
+          <h2>Systems that show architecture, model quality, and production thinking.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured reveal" id="incident-architecture">
+            <div class="project-topline">
+              <span>Agentic AI / LangGraph / AWS</span>
+              <div class="project-links">
+                <a href="demos/incident-commander.html">Live Demo</a>
+                <a href="https://github.com/prashantmisraai/incident-commander-agent" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="#architecture">Architecture</a>
+              </div>
+            </div>
+            <h3>Incident Commander Agent</h3>
+            <p>
+              Autonomous incident response agent with multi-agent orchestration for triage,
+              diagnosis, notification, runbook execution, retries, graceful fallback, and human
+              escalation.
+            </p>
+            <div class="project-preview terminal-preview" aria-label="Incident agent workflow preview">
+              <span>sev-1 detected: payment-api p99 spike</span>
+              <span>root cause: database connection saturation</span>
+              <span>action: scale read replicas + notify owner</span>
+            </div>
+            <div class="project-metrics">
+              <span>MTTR-focused runbooks</span><span>Human fallback</span><span>CloudWatch-ready</span>
+            </div>
+            <div class="stack-line">Python • LangGraph • LangChain • FastAPI • AWS SDK • Docker • Slack/PagerDuty</div>
+            <div class="architecture-strip" aria-label="Incident Commander architecture">
+              <span>Triage</span><span>Root cause</span><span>Runbook</span><span>Notify</span><span>Escalate</span>
+            </div>
+          </article>
+
+          <article class="project-card featured reveal" id="rag-architecture">
+            <div class="project-topline">
+              <span>Production RAG / LLM / Docker</span>
+              <div class="project-links">
+                <a href="demos/enterprise-rag.html">Live Demo</a>
+                <a href="https://github.com/prashantmisraai/enterprise-rag-agent" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="#architecture">Architecture</a>
+              </div>
+            </div>
+            <h3>Enterprise RAG Agent</h3>
+            <p>
+              End-to-end RAG application with ingestion, hybrid retrieval, context compression,
+              re-ranking, test coverage, Dockerized deployment, and pluggable LLM backends.
+            </p>
+            <div class="project-preview rag-preview" aria-label="RAG answer preview">
+              <div><strong>Query</strong><span>How do we resolve API latency incidents?</span></div>
+              <div><strong>Sources</strong><span>runbook.md, cloudwatch.md, postmortem.md</span></div>
+              <div><strong>Answer</strong><span>Grounded response with cited remediation steps.</span></div>
+            </div>
+            <div class="project-metrics">
+              <span>35% retrieval lift</span><span>31% faithfulness lift</span><span>2.4s -> 900ms latency</span>
+            </div>
+            <div class="stack-line">FastAPI • LangChain • FAISS/Pinecone • Redis • PostgreSQL • Docker • pytest</div>
+            <div class="architecture-strip" aria-label="Enterprise RAG architecture">
+              <span>Query</span><span>Retriever</span><span>Re-ranker</span><span>LLM</span><span>Response</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span>Classical ML / Time Series</span>
+              <div class="project-links"><a href="demos/forecasting.html">Dashboard</a></div>
+            </div>
+            <h3>Demand Forecasting Platform</h3>
+            <p>
+              Multi-model forecasting system using ARIMA, XGBoost, LightGBM, and Prophet with lag
+              features, rolling statistics, seasonal signals, and segment-level model selection.
+            </p>
+            <div class="stack-line">Python • XGBoost • Prophet • scikit-learn • pandas • matplotlib • Jupyter</div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span>NLP / Transformers / spaCy</span>
+              <div class="project-links">
+                <a href="https://github.com/prashantmisraai/named-entity" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+            <h3>Named Entity Recognition</h3>
+            <p>
+              End-to-end NER workflow for data preparation, training, inference, tokenization, IOB
+              tagging, and seqeval-based model evaluation.
+            </p>
+            <div class="stack-line">Python • HuggingFace Transformers • spaCy • seqeval • Jupyter</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section architecture-section" id="architecture">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Architecture</p>
+          <h2>Deployment shape and AI workflow depth.</h2>
+        </div>
+        <div class="architecture-board reveal">
+          <div class="flow-panel">
+            <h3>Enterprise RAG flow</h3>
+            <div class="flow-diagram" aria-label="RAG flow diagram">
+              <span>User query</span><span>Hybrid retrieval</span><span>Re-ranker</span><span>Context compression</span><span>LLM response</span><span>Faithfulness eval</span>
+            </div>
+          </div>
+          <div class="deploy-grid">
+            <article><strong>Frontend</strong><span>Static portfolio / Next.js-ready / Vercel</span></article>
+            <article><strong>Backend</strong><span>FastAPI, REST APIs, streaming responses, async workers</span></article>
+            <article><strong>AI layer</strong><span>LangChain, LangGraph, Bedrock/OpenAI/local model adapters</span></article>
+            <article><strong>Data</strong><span>PostgreSQL, Redis, FAISS, Pinecone, S3 document stores</span></article>
+            <article><strong>Monitoring</strong><span>CloudWatch, traces, quality dashboards, regression evals</span></article>
+            <article><strong>Delivery</strong><span>Docker, GitHub Actions, ECS/Lambda, test gates</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section philosophy-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Architecture philosophy</p>
+          <h2>What I optimize for when AI moves into production.</h2>
+        </div>
+        <div class="principle-grid reveal">
+          <article><h3>Reliability</h3><p>Retries, fallbacks, runbooks, and clear failure states.</p></article>
+          <article><h3>Evaluation</h3><p>Faithfulness, relevance, regression sets, and human review loops.</p></article>
+          <article><h3>Latency</h3><p>Budgeted retrieval, caching, compression, and measurable P99 targets.</p></article>
+          <article><h3>Cost efficiency</h3><p>Right-sized model routing, token budgets, and batched ingestion.</p></article>
+          <article><h3>Observability</h3><p>Prompt, retrieval, tool, latency, and quality traces in one view.</p></article>
+          <article><h3>Human control</h3><p>Escalation paths, approval gates, and auditable agent actions.</p></article>
+        </div>
+      </section>
+
+      <section class="section production-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Production AI features</p>
+          <h2>The details that separate demos from dependable systems.</h2>
+        </div>
+        <div class="feature-grid reveal">
+          <span>Retry handling</span><span>Streaming responses</span><span>Token budgeting</span>
+          <span>Guardrails</span><span>Hallucination detection</span><span>Rate limiting</span>
+          <span>Semantic caching</span><span>Prompt/version tracking</span><span>RAG regression tests</span>
+          <span>Tracing</span><span>Human-in-the-loop review</span><span>CI/CD gates</span>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Enterprise AI delivery across product, platform, and infrastructure.</h2>
+        </div>
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <div><span class="date">Oct 2024 - Present</span><h3>Senior AI Engineer, Hitachi Digital Services</h3></div>
+            <p>
+              Architecting LLM-powered enterprise search for 5,000+ internal users with custom RAG,
+              re-ranking, context compression, hallucination mitigation, and RAGAS-inspired quality
+              benchmarks. Improved retrieval accuracy by 35%, reduced hallucinations by 40%, and
+              optimized P99 latency by 30% while deploying AWS microservices with 99.9% uptime targets.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <div><span class="date">Jun 2023 - Oct 2024</span><h3>Senior Software Engineer - AI, Quantiphi Analytics</h3></div>
+            <p>
+              Productionized three GenAI solutions across document processing, customer service, and
+              knowledge management. Designed event-driven AWS microservices for 2x peak traffic,
+              improved LLM relevance through evaluation loops, and led a four-engineer delivery team.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <div><span class="date">Aug 2022 - Apr 2023</span><h3>Senior Software Engineer - AI & Backend, Marlabs Inc.</h3></div>
+            <p>
+              Built healthcare ML data pipelines, integrated HL7/FHIR standards across five enterprise
+              systems, improved interoperability by 20%, and reduced production defects by 25% through
+              CI/CD gates and automated regression suites.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <div><span class="date">Jul 2019 - Aug 2022</span><h3>Software Engineer, Capgemini</h3></div>
+            <p>
+              Delivered 10+ Java/Spring Boot enterprise modules, ML-driven analytics APIs, monitoring
+              workflows, 99.9% uptime practices, and mentorship for three junior engineers across
+              distributed delivery teams.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section writing-section" id="writing">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technical writing</p>
+          <h2>Topics I can publish and discuss with engineering teams.</h2>
+        </div>
+        <div class="writing-grid reveal">
+          <article><span>01</span><h3>RAG chunking strategies</h3><p>How chunk size, overlap, metadata, and re-ranking change answer quality.</p></article>
+          <article>
+            <span>02</span>
+            <h3>Prompt injection defense</h3>
+            <p>Production-grade framework for defending LLM systems beyond simple input filters.</p>
+            <a
+              class="writing-link"
+              href="https://medium.com/@prashantmisraai/beyond-the-filter-a-production-grade-framework-for-prompt-injection-defense-1e67ff9dac90"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Read on Medium
+            </a>
+          </article>
+          <article><span>03</span><h3>LangGraph orchestration</h3><p>Designing agent state machines with retries, escalation, and observability.</p></article>
+          <article><span>04</span><h3>LLM evaluation pipelines</h3><p>Regression tests, faithfulness scoring, and human-in-the-loop review for GenAI releases.</p></article>
+        </div>
+      </section>
+
+      <section class="section exploring-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Currently exploring</p>
+          <h2>Where my AI engineering practice is moving next.</h2>
+        </div>
+        <div class="skill-cloud reveal" aria-label="Currently exploring">
+          <span>Multi-agent systems</span><span>MCP</span><span>Long-context optimization</span>
+          <span>Semantic caching</span><span>Evaluation pipelines</span><span>Agent observability</span>
+          <span>Tool-use safety</span><span>Model routing</span>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="reveal">
+          <p class="eyebrow">Let's build</p>
+          <h2>Available for Senior AI Engineer, Applied AI, LLM Engineer, and Backend AI Platform roles.</h2>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@company.com" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Tell me what you are building" required></textarea>
+          </label>
+          <div class="contact-actions">
+            <button class="button primary" type="submit">Send message</button>
+            <a class="button" href="mailto:prashantmisraai@gmail.com">prashantmisraai@gmail.com</a>
+          </div>
+          <p class="form-note" id="formNote" aria-live="polite">
+            This opens your email app with the message pre-filled.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Prashant Kumar Misra</span>
+      <span>Available for Senior AI / Applied AI / LLM / Backend AI Platform roles</span>
+      <span>Bengaluru, India</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

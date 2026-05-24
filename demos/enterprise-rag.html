@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enterprise RAG Demo | Prashant Misra</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body { background: #101820; color: #fff; }
+      .demo-shell { min-height: 100vh; padding: clamp(1rem, 4vw, 4rem); }
+      .demo-grid { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1fr); gap: 1rem; align-items: start; }
+      .demo-panel { border: 1px solid rgba(255,255,255,.16); border-radius: 8px; background: rgba(255,255,255,.06); padding: 1.2rem; }
+      .demo-panel p, .demo-panel li { color: rgba(255,255,255,.72); }
+      .query-box { display: grid; gap: .8rem; }
+      .query-box textarea { min-height: 9rem; border: 1px solid rgba(255,255,255,.16); border-radius: 8px; background: rgba(255,255,255,.08); color: #fff; padding: 1rem; font: inherit; }
+      .trace { display: grid; gap: .7rem; margin-top: 1rem; }
+      .trace span { border-left: 4px solid #6ee7d8; background: rgba(255,255,255,.08); padding: .75rem; font-family: "JetBrains Mono", monospace; font-size: .82rem; }
+      @media (max-width: 900px) { .demo-grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main class="demo-shell">
+      <a class="button" href="../index.html">Back to portfolio</a>
+      <section class="demo-grid" style="margin-top: 2rem;">
+        <div class="demo-panel">
+          <p class="eyebrow">Live demo mock</p>
+          <h1 style="font-size: clamp(2.4rem, 7vw, 5rem);">Enterprise RAG Agent</h1>
+          <p>
+            A deployable demo surface for hybrid retrieval, re-ranking, context compression,
+            answer generation, and faithfulness scoring. Connect this shell to your FastAPI RAG
+            backend when deployed.
+          </p>
+          <div class="stack-line">FastAPI • LangChain • FAISS/Pinecone • Redis • PostgreSQL • Docker</div>
+        </div>
+        <div class="demo-panel query-box">
+          <label for="query">Ask enterprise knowledge base</label>
+          <textarea id="query">What incidents were resolved by runbook automation last week?</textarea>
+          <button class="button primary" id="runDemo">Run retrieval trace</button>
+          <div class="trace" id="trace" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const trace = document.querySelector("#trace");
+      document.querySelector("#runDemo").addEventListener("click", () => {
+        trace.innerHTML = "";
+        ["dense + sparse retrieval: 18 candidates", "cross-encoder re-rank: top 5", "context compression: 5.8k -> 2.1k tokens", "LLM response grounded with citations", "faithfulness check: pass"].forEach((item, index) => {
+          setTimeout(() => {
+            const row = document.createElement("span");
+            row.textContent = item;
+            trace.appendChild(row);
+          }, index * 260);
+        });
+      });
+    </script>
+  </body>
+</html>

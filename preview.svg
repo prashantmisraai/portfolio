@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f5ef"/>
+  <circle cx="190" cy="150" r="150" fill="#1251a3" opacity=".14"/>
+  <circle cx="990" cy="120" r="170" fill="#0f766e" opacity=".14"/>
+  <rect x="82" y="88" width="1036" height="454" rx="20" fill="#101820"/>
+  <text x="130" y="180" fill="#6ee7d8" font-family="monospace" font-size="28" font-weight="700">Senior AI Engineer</text>
+  <text x="130" y="285" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="800">Prashant Kumar Misra</text>
+  <text x="130" y="350" fill="#dbe7e4" font-family="Inter, Arial, sans-serif" font-size="34">Production AI systems, RAG pipelines, agentic AI, backend platforms.</text>
+  <g fill="none" stroke="#6ee7d8" stroke-width="5" opacity=".9">
+    <path d="M160 455h120l55-70 70 95 60-58h120"/>
+    <path d="M680 455h80l45-55 65 75 55-48h115"/>
+  </g>
+</svg>

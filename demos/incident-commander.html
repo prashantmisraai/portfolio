@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Incident Commander Demo | Prashant Misra</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body { background: #101820; color: #fff; }
+      .demo-shell { min-height: 100vh; padding: clamp(1rem, 4vw, 4rem); }
+      .agent-board { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; margin-top: 2rem; }
+      .agent-board article { min-height: 11rem; border: 1px solid rgba(255,255,255,.16); border-radius: 8px; background: rgba(255,255,255,.07); padding: 1rem; }
+      .agent-board p { color: rgba(255,255,255,.7); font-size: .9rem; }
+      .status { color: #6ee7d8; font-family: "JetBrains Mono", monospace; font-size: .78rem; }
+      @media (max-width: 1000px) { .agent-board { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main class="demo-shell">
+      <a class="button" href="../index.html">Back to portfolio</a>
+      <section style="margin-top: 2rem; max-width: 58rem;">
+        <p class="eyebrow">Live demo mock</p>
+        <h1 style="font-size: clamp(2.4rem, 7vw, 5rem);">AI Incident Commander</h1>
+        <p class="hero-text" style="color: rgba(255,255,255,.76);">
+          Multi-agent workflow for triage, diagnosis, runbook execution, notification, and escalation.
+        </p>
+        <button class="button primary" id="simulate">Simulate incident</button>
+      </section>
+      <section class="agent-board" id="board" aria-live="polite">
+        <article><span class="status">waiting</span><h3>Triage Agent</h3><p>Classifies severity and affected service.</p></article>
+        <article><span class="status">waiting</span><h3>Root Cause Agent</h3><p>Reads logs, metrics, and recent deploys.</p></article>
+        <article><span class="status">waiting</span><h3>Runbook Agent</h3><p>Chooses the safest remediation path.</p></article>
+        <article><span class="status">waiting</span><h3>Notify Agent</h3><p>Updates Slack, PagerDuty, and stakeholders.</p></article>
+        <article><span class="status">waiting</span><h3>Escalation Gate</h3><p>Routes to humans when confidence is low.</p></article>
+      </section>
+    </main>
+    <script>
+      document.querySelector("#simulate").addEventListener("click", () => {
+        document.querySelectorAll(".status").forEach((status, index) => {
+          status.textContent = "queued";
+          setTimeout(() => {
+            status.textContent = index === 4 ? "human-approved" : "complete";
+          }, 450 + index * 420);
+        });
+      });
+    </script>
+  </body>
+</html>
